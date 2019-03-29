@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>创建后:
+        1、在当前生命周期函数中我们可以访问到vm身上所有的属性和方法
+        2、当前生命周期函数会将data和methods身上所有的属性和方法都挂载在vm的实例身上
+        3、当前生命周期函数会将data身上所有的属性添加一个getter/setter方法，因此如果需要进行
+        前后端数据交互的时候必须在当前生命周期中进行(响应式原理),如果数据没有提前在data中进行了绑定
+        那么这个属性身上就不会有getter/setter方法，因此数据也不会动态的进行改变</h2>
+</body>
+</html>
